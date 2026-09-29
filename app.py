@@ -24,7 +24,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
-st.image("img.jpg",width=150)
+
 st.markdown(
     """
     <style>
@@ -93,7 +93,7 @@ def explain_reason(row: dict) -> str:
 
 
 require_connection()
-
+st.image("img.jpg",width=150)
 with st.sidebar:
     st.markdown("## 📚 GraphBook")
     st.caption("Neo4j Aura + Streamlit")
